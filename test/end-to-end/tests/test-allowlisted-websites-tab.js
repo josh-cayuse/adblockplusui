@@ -24,7 +24,8 @@ const {expect} = require("chai");
 const AllowlistedWebsitesPage =
   require("../page-objects/allowlistedWebsites.page");
 
-describe("test allowlisted websites tab", function()
+// allowlisted websites  replaces QA task: Joshua Cruz
+describe("test QA task: Joshua Cruz tab", function()
 {
   this.retries(globalRetriesNumber);
 
@@ -33,7 +34,7 @@ describe("test allowlisted websites tab", function()
     await beforeSequence();
   });
 
-  it("should display allowlisted websites default state", async function()
+  it("should display QA task: Joshua Cruz default state", async function()
   {
     const allowistedWebsitesPage = new AllowlistedWebsitesPage(browser);
     await allowistedWebsitesPage.init();
@@ -47,7 +48,7 @@ describe("test allowlisted websites tab", function()
       isAddWebsiteButtonEnabled()).to.be.false;
   });
 
-  it("should add a website to allowlisted websites", async function()
+  it("should add a website to QA task: Joshua Cruz", async function()
   {
     const allowistedWebsitesPage = new AllowlistedWebsitesPage(browser);
     await allowistedWebsitesPage.init();
@@ -65,7 +66,7 @@ describe("test allowlisted websites tab", function()
     });
   });
 
-  it("should remove a website from allowlisted websites", async function()
+  it("should remove a website from QA task: Joshua Cruz", async function()
   {
     const allowistedWebsitesPage = new AllowlistedWebsitesPage(browser);
     await allowistedWebsitesPage.init();
